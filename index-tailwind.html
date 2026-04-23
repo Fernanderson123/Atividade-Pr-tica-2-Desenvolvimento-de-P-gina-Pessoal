@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Pessoal</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: 'class',
+            }
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <nav class="border-b bg-white dark:bg-gray-900 dark:border-gray-700 sticky top-0 z-50 transition-colors duration-300">
+    <body class="bg-white text-gray-800">
+        <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">.
+        <nav class="border-b bg-white sticky top-0 z-50">
+            <div class="container mx-auto px-4 py-3 flex flex-wrap items-center justify-between">
+                <a class="text-lg font-semibold text-gray-900 hover:text-blue-600 transition flex items-center" href="#top">
+                    <i class="fa-solid fa-code me-2 pr-2"></i>Meu Portfólio
+                </a>
+                
+                <button id="navToggler" class="lg:hidden text-gray-500 hover:text-gray-700 focus:outline-none" type="button">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+                
+                <div class="hidden w-full lg:flex lg:items-center lg:w-auto mt-4 lg:mt-0" id="navContent">
+                    <ul class="flex flex-col lg:flex-row lg:ml-auto gap-4 lg:gap-6 text-gray-600">
+                        <li><a class="hover:text-blue-600 transition" href="#sobre">Sobre</a></li>
+                        <li><a class="hover:text-blue-600 transition" href="#habilidades">Habilidades</a></li>
+                        <li><a class="hover:text-blue-600 transition" href="#projetos">Projetos</a></li>
+                        <li><a class="hover:text-blue-600 transition" href="#interesses">Interesses</a></li>
+                        <li><a class="hover:text-blue-600 transition" href="#contato">Contato</a></li>
+                    </ul>
+                    <div class="lg:ml-6 flex items-center gap-2 py-2 lg:py-0 mt-2 lg:mt-0">
+                        <span class="text-sm text-gray-500 hidden lg:inline">Tema</span>
+                        <button id="themeToggle" class="border border-gray-300 text-gray-600 hover:bg-gray-100 rounded px-2 py-1 text-sm transition" type="button">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header id="top" class="py-12 lg:py-20">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row items-center gap-8">
+                    <div class="w-full lg:w-1/3 text-center">
+                        <img class="profile-img shadow-md rounded-full max-w-[200px] mx-auto" src="assets/img/foto.jpg" alt="Foto de perfil">
+                        <div class="mt-4 flex justify-center gap-2">
+                            <span class="bg-blue-600 text-white text-xs font-semibold px-2.5 py-1 rounded">Sistemas de Informação</span>
+                            <span class="bg-gray-600 text-white text-xs font-semibold px-2.5 py-1 rounded">UFLA</span>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-2/3 text-center lg:text-left">
+                        <h1 class="text-3xl lg:text-4xl font-semibold mb-4 text-gray-900">
+                            Olá! Eu sou o <span class="text-blue-600">Anderson</span>
+                        </h1>
+                        <p class="text-lg text-gray-500 mb-6">
+                            Estudante do curso de Sistemas de Informação, interessado em desenvolvimento web e em aprender mais sobre tecnologias e computação.
+                        </p>
+                        <div class="flex flex-wrap justify-center lg:justify-start gap-3">
+                            <a class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 transition flex items-center" href="#projetos">
+                                <i class="fa-solid fa-diagram-project mr-2"></i>Ver projetos
+                            </a>
+                            <a class="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50 transition flex items-center" href="#contato">
+                                <i class="fa-solid fa-envelope mr-2"></i>Contato
+                            </a>
+                            <a class="border border-gray-400 text-gray-700 px-4 py-2 rounded hover:bg-gray-100 transition flex items-center" href="https://github.com/Fernanderson123" target="_blank">
+                                <i class="fa-brands fa-github mr-2"></i>GitHub
+                            </a>
+                            <a class="border border-gray-400 text-gray-700 px-4 py-2 rounded hover:bg-gray-100 transition flex items-center" href="https://www.linkedin.com/in/anderson-fernandes-a76237176/" target="_blank">
+                                <i class="fa-brands fa-linkedin mr-2"></i>LinkedIn
+                            </a>
+                        </div>
+                        <hr class="my-8 border-gray-200">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                            <div class="p-4 rounded-lg border border-gray-200 bg-gray-50">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-graduation-cap text-blue-600"></i>
+                                    <strong class="text-gray-900">Curso</strong>
+                                </div>
+                                <p class="mb-0 text-gray-600 text-sm">
+                                    Bacharelado em Sistemas de Informação - Universidade Federal de Lavras (UFLA).
+                                </p>
+                            </div>
+                            <div class="p-4 rounded-lg border border-gray-200 bg-gray-50">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <i class="fa-solid fa-bullseye text-blue-600"></i>
+                                    <strong class="text-gray-900">Objetivo</strong>
+                                </div>
+                                <p class="mb-0 text-gray-600 text-sm">
+                                    Aprimorar habilidades em web (front-end e back-end) e participar de projetos práticos no semestre.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="pb-16">
+            <section id="sobre" class="py-8">
+                <div class="container mx-auto px-4">
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-semibold mb-1 text-gray-900">Sobre</h2>
+                        <p class="text-gray-500 mb-0">Uma breve descrição do estudante e trajetória.</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                        <div class="lg:col-span-7">
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm h-full">
+                                <div class="p-6">
+                                    <p class="mb-3 text-gray-700">
+                                        Sou estudante de Sistemas de Informação e UX/UI Designer e pretendo aprender a construir aplicações web para criar projetos.
+                                    </p>
+                                    <p class="mb-0 text-gray-500 text-sm">
+                                        Nesta página, apresento minhas habilidades, interesses e projetos desenvolvidos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5">
+                            <div class="bg-white border border-gray-200 rounded-lg shadow-sm h-full">
+                                <div class="p-6">
+                                    <h3 class="text-lg font-semibold mb-4 text-gray-900">Informações rápidas</h3>
+                                    <ul class="text-gray-700 space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <i class="fa-solid fa-location-dot text-blue-600 mt-1"></i>
+                                            <div><strong class="text-gray-900">Cidade:</strong> Lavras/MG</div>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <i class="fa-solid fa-language text-blue-600 mt-1"></i>
+                                            <div><strong class="text-gray-900">Idiomas:</strong> Português, Inglês (intermediário)</div>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <i class="fa-solid fa-laptop-code text-blue-600 mt-1"></i>
+                                            <div><strong class="text-gray-900">Área:</strong> Desenvolvimento Web</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="habilidades" class="py-8">
+                <div class="container mx-auto px-4">
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-semibold mb-1 text-gray-900">Habilidades</h2>
+                        <p class="text-gray-500 mb-0">Tecnologias e competências.</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                            <div class="p-6">
+                                <h3 class="font-semibold text-gray-900 mb-3">Tecnologias</h3>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="bg-blue-600 text-white text-xs px-3 py-1 rounded-full">HTML</span>
+                                    <span class="bg-blue-600 text-white text-xs px-3 py-1 rounded-full">CSS</span>
+                                    <span class="bg-blue-600 text-white text-xs px-3 py-1 rounded-full">JavaScript</span>
+                                    <span class="bg-gray-600 text-white text-xs px-3 py-1 rounded-full">Tailwind CSS</span>
+                                    <span class="bg-gray-600 text-white text-xs px-3 py-1 rounded-full">Git/GitHub</span>
+                                    <span class="bg-gray-600 text-white text-xs px-3 py-1 rounded-full">Python</span>
+                                    <span class="bg-gray-600 text-white text-xs px-3 py-1 rounded-full">Django</span>
+                                </div>
+                                <hr class="my-4 border-gray-200">
+                                <h3 class="font-semibold text-gray-900 mb-3">Competências</h3>
+                                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                    <li>Construção de páginas responsivas</li>
+                                    <li>Manipulação do DOM e eventos</li>
+                                    <li>Organização de projetos e versionamento</li>
+                                    <li>Boas práticas de legibilidade de código</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                            <div class="p-6">
+                                <h3 class="font-semibold text-gray-900 mb-4">Nível de familiaridade (exemplo)</h3>
+                                <div class="mb-4">
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-sm font-medium text-gray-700">HTML</span>
+                                        <span class="text-sm text-gray-500">Intermediário</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-sm font-medium text-gray-700">CSS</span>
+                                        <span class="text-sm text-gray-500">Básico-Intermediário</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 55%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-sm font-medium text-gray-700">JavaScript</span>
+                                        <span class="text-sm text-gray-500">Intermediário</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projetos" class="py-8">
+                <div class="container mx-auto px-4">
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-semibold mb-1 text-gray-900">Projetos</h2>
+                        <p class="text-gray-500 mb-0">Alguns trabalhos já desenvolvidos.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col h-full">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                                    <h3 class="text-lg font-semibold text-gray-900">Snake Game</h3>
+                                    <div class="flex gap-1">
+                                        <span class="bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded">HTML</span>
+                                        <span class="bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded">CSS</span>
+                                        <span class="bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded">JS</span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-500 text-sm mb-4">
+                                    Implementação do jogo com verificação de vitória e reinício.
+                                </p>
+                                <ul class="text-sm text-gray-700 list-disc list-inside mb-6">
+                                    <li>Matriz</li>
+                                    <li>Manipulação do DOM</li>
+                                    <li>Animação de personagens</li>
+                                </ul>
+                                <div class="mt-auto flex gap-2">
+                                    <a class="border border-blue-600 text-blue-600 hover:bg-blue-50 text-sm px-3 py-1.5 rounded transition flex items-center" href="https://github.com/Fernanderson123/snake-game" target="_blank" rel="noreferrer">
+                                        <i class="fa-brands fa-github mr-1"></i>Repositório
+                                    </a>
+                                    <a class="bg-blue-600 text-white hover:bg-blue-700 text-sm px-3 py-1.5 rounded transition flex items-center" href="https://fernanderson123.github.io/snake-game" target="_blank" rel="noreferrer">
+                                        <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i>Demo
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm flex flex-col h-full">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                                    <h3 class="text-lg font-semibold text-gray-900">Projeto Engenharia</h3>
+                                    <div class="flex gap-1">
+                                        <span class="bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded">Blade</span>
+                                        <span class="bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded">PHP</span>
+                                        <span class="bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded">Laravel</span>
+                                    </div>
+                                </div>
+                                <p class="text-gray-500 text-sm mb-4">
+                                    Implementação de página pessoal com seções e navegação.
+                                </p>
+                                <ul class="text-sm text-gray-700 list-disc list-inside mb-6">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <div class="mt-auto flex gap-2">
+                                    <a class="border border-blue-600 text-blue-600 hover:bg-blue-50 text-sm px-3 py-1.5 rounded transition flex items-center" href="https://github.com/Fernanderson123/Projeto-ES" target="_blank" rel="noreferrer">
+                                        <i class="fa-brands fa-github mr-1"></i>Repositório
+                                    </a>                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>                         
+                </div>
+            </section>
+
+            <section id="interesses" class="py-8">
+                <div class="container mx-auto px-4">
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-semibold mb-1 text-gray-900">Interesses</h2>
+                        <p class="text-gray-500 mb-0">Áreas que eu gosto de estudar/pesquisar.</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                            <div class="p-6 h-full">
+                                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                    <li>Desenvolvimento Web (Front-end e Back-end)</li>
+                                    <li>Banco de Dados e modelagem</li>
+                                    <li>Algoritmos e estruturas de dados</li>
+                                    <li>Engenharia de Software</li>
+                                    <li>Dados e visualização</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                            <div class="p-6 h-full">
+                                <h3 class="font-semibold text-gray-900 mb-2">Atividades</h3>
+                                <p class="text-gray-600 mb-4 text-sm">
+                                    Participo de projetos acadêmicos e gosto de aprender criando coisas.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="border border-gray-300 bg-gray-50 text-gray-700 text-sm px-3 py-1.5 rounded flex items-center"><i class="fa-solid fa-book mr-2"></i>Estudos</span>
+                                    <span class="border border-gray-300 bg-gray-50 text-gray-700 text-sm px-3 py-1.5 rounded flex items-center"><i class="fa-solid fa-people-group mr-2"></i>Trabalho em equipe</span>
+                                    <span class="border border-gray-300 bg-gray-50 text-gray-700 text-sm px-3 py-1.5 rounded flex items-center"><i class="fa-solid fa-terminal mr-2"></i>Projetos práticos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato" class="py-8">
+                <div class="container mx-auto px-4">
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-semibold mb-1 text-gray-900">Contato</h2>
+                        <p class="text-gray-500 mb-0">Como falar comigo.</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                            <div class="p-6">
+                                <ul class="space-y-4 text-gray-700">
+                                    <li class="flex items-center gap-3">
+                                        <i class="fa-solid fa-envelope text-blue-600 text-lg w-5 text-center"></i>
+                                        <span>andersonfilds@gmail.com</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <i class="fa-brands fa-github text-blue-600 text-lg w-5 text-center"></i>
+                                        <a class="hover:text-blue-600 transition" href="https://github.com/Fernanderson123" target="_blank" rel="noreferrer">
+                                            github.com/Fernanderson123
+                                        </a>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <i class="fa-brands fa-linkedin text-blue-600 text-lg w-5 text-center"></i>
+                                        <a class="hover:text-blue-600 transition" href="https://www.linkedin.com/in/anderson-fernandes-a76237176/" target="_blank" rel="noreferrer">
+                                            linkedin.com/in/anderson-fernandes
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+                            <div class="p-6">
+                                <ul class="space-y-4 text-gray-700">
+                                    <li class="flex items-center gap-3">
+                                        <i class="fa-brands fa-instagram text-blue-600 text-lg w-5 text-center"></i>
+                                        <a class="hover:text-blue-600 transition" href="https://instagram.com/_fernanderson" target="_blank" rel="noreferrer">
+                                            instagram.com/_fernanderson
+                                        </a>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <i class="fa-brands fa-facebook text-blue-600 text-lg w-5 text-center"></i>
+                                        <a class="hover:text-blue-600 transition" href="https://facebook.com/anderson.fernandes.923" target="_blank" rel="noreferrer">
+                                            facebook.com/anderson.fernandes.923
+                                        </a>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <i class="fa-brands fa-youtube text-blue-600 text-lg w-5 text-center"></i>
+                                        <a class="hover:text-blue-600 transition" href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+                                            youtube.com/seu-usuario
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="border-t border-gray-200 py-6 bg-white">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">
+                <small class="text-gray-500">© <span id="year"></span> Página Pessoal — Anderson</small>
+                <small class="text-gray-500">Feito com HTML + Tailwind CSS + um pouco de JS</small>
+            </div>
+        </footer>
+
+        <script src="assets/js/script.js"></script>
+
+        <script>
+            document.getElementById('navToggler').addEventListener('click', function() {
+                var navContent = document.getElementById('navContent');
+                navContent.classList.toggle('hidden');
+            });
+        </script>
+    </body>
+</html>
