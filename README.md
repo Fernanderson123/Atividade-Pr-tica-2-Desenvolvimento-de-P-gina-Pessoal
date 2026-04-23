@@ -134,7 +134,7 @@ index-tailwind.html
 
 ## 👤 Autor
 
-**Seu Nome Aqui**
+**Anderson Fernandes Barbosa**
 Estudante de Sistemas de Informação
 Universidade Federal de Lavras (UFLA)
 
